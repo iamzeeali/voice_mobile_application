@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Web App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Enter User Information</h1>
+
+      <!-- Form to add a new user -->
+      <form id="userForm">
+        <input type="text" id="userName" placeholder="Enter name" required />
+        <button type="submit">Add User</button>
+      </form>
+
+      <h2>User List</h2>
+      <button id="fetchUsersBtn">Fetch Users</button>
+      <ul id="userList"></ul>
+
+      <p class="offline-warning" id="offlineWarning">
+        You are offline. Some features may be unavailable.
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
